@@ -1,6 +1,12 @@
 <?php
-require('modele.php');
-$result = result();
-require('affichage.php');
-require_once('connect.php');
-require_once('close.php');
+require('controller.php');
+
+if (isset($_GET['action'])) {
+    if ($_GET['action'] == 'affichage') {
+        affichage();
+    } elseif ($_GET['action'] == 'addProduct') {
+        addProduct();
+    }
+} else {
+    affichage();
+}
