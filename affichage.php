@@ -55,7 +55,7 @@
                         ?>
                     </tbody>
                 </table>
-                <a href="add.php?action=index.php?action=addProduct" class="btn btn-primary">Ajouter un produit</a>
+                <a href="index.php?action=addProduct" class="btn btn-primary">Ajouter un produit</a>
             </section>
         </div>
     </main>

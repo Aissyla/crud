@@ -10,5 +10,6 @@ function affichage()
 
 function addProduct()
 {
+    $add = add();
     require('add.php');
 }
