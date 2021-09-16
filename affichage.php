@@ -41,21 +41,24 @@
                     <tbody>
                         <?php
                         // On boucle sur la variable result
-                        foreach ($result as $produit) {
+                        foreach ($produits as $produit) {
                         ?>
                             <tr>
                                 <td><?= $produit['id'] ?></td>
                                 <td><?= $produit['produit'] ?></td>
                                 <td><?= $produit['prix'] ?></td>
                                 <td><?= $produit['nombre'] ?></td>
-                                <td><a class="btn btn-primary" href="details.php?id=<?= $produit['id'] ?>">Voir</a> <a class="btn btn-success" href="edit.php?id=<?= $produit['id'] ?>">Modifier</a> <a class="btn btn-danger" href="delete.php?id=<?= $produit['id'] ?>">Supprimer</a></td>
+                                <td><a class="btn btn-primary" href="index.php?action=readProduct&AMP;id=<?= $produit['id'] ?>">Voir</a>
+                                    <a class="btn btn-success" href="index.php?action=updateProduct&AMP;id=<?= $produit['id'] ?>">Modifier</a>
+                                    <a class="btn btn-danger" href="index.php?action=deleteProduct&AMP;id=<?= $produit['id'] ?>">Supprimer</a>
+                                </td>
                             </tr>
                         <?php
                         }
                         ?>
                     </tbody>
                 </table>
-                <a href="index.php?action=addProduct" class="btn btn-primary">Ajouter un produit</a>
+                <a href="index.php?action=createProduct" class="btn btn-primary">Ajouter un produit</a>
             </section>
         </div>
     </main>

@@ -2,14 +2,31 @@
 
 require('modele.php');
 
-function affichage()
+function viewProducts()
 {
-    $result = result();
+    $produits = produits();
     require('affichage.php');
 }
 
-function addProduct()
+function createProduct()
 {
-    $add = add();
+    $create = create();
     require('add.php');
+}
+
+function readProduct()
+{
+    $produit = read();
+    require('details.php');
+}
+
+function updateProduct()
+{
+    $produit = update();
+    require('edit.php');
+}
+
+function deleteProduct()
+{
+    $delete = delete();
 }
