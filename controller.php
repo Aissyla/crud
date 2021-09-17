@@ -1,11 +1,11 @@
 <?php
 
-require('modele.php');
+require('model.php');
 
 function viewProducts()
 {
-    $produits = produits();
-    require('affichage.php');
+    $products = products();
+    require('view.php');
 }
 
 function createProduct()
@@ -16,13 +16,13 @@ function createProduct()
 
 function readProduct()
 {
-    $produit = read();
+    $product = read();
     require('details.php');
 }
 
 function updateProduct()
 {
-    $produit = update();
+    $product = update();
     require('edit.php');
 }
 

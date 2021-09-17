@@ -14,7 +14,7 @@ function connect()
 }
 
 
-function produits()
+function products()
 {
     $db = connect();
 
@@ -31,9 +31,9 @@ function produits()
     $query->execute();
 
     // On stocke le résultat dans un tableau associatif
-    $produits = $query->fetchAll(PDO::FETCH_ASSOC);
+    $products = $query->fetchAll(PDO::FETCH_ASSOC);
 
-    return $produits;
+    return $products;
 
     require_once('close.php');
 }

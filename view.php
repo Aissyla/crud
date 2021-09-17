@@ -41,16 +41,16 @@
                     <tbody>
                         <?php
                         // On boucle sur la variable result
-                        foreach ($produits as $produit) {
+                        foreach ($products as $product) {
                         ?>
                             <tr>
-                                <td><?= $produit['id'] ?></td>
-                                <td><?= $produit['produit'] ?></td>
-                                <td><?= $produit['prix'] ?></td>
-                                <td><?= $produit['nombre'] ?></td>
-                                <td><a class="btn btn-primary" href="index.php?action=readProduct&AMP;id=<?= $produit['id'] ?>">Voir</a>
-                                    <a class="btn btn-success" href="index.php?action=updateProduct&AMP;id=<?= $produit['id'] ?>">Modifier</a>
-                                    <a class="btn btn-danger" href="index.php?action=deleteProduct&AMP;id=<?= $produit['id'] ?>">Supprimer</a>
+                                <td><?= $product['id'] ?></td>
+                                <td><?= $product['produit'] ?></td>
+                                <td><?= $product['prix'] ?></td>
+                                <td><?= $product['nombre'] ?></td>
+                                <td><a class="btn btn-primary" href="index.php?action=readProduct&AMP;id=<?= $product['id'] ?>">Voir</a>
+                                    <a class="btn btn-success" href="index.php?action=updateProduct&AMP;id=<?= $product['id'] ?>">Modifier</a>
+                                    <a class="btn btn-danger" href="index.php?action=deleteProduct&AMP;id=<?= $product['id'] ?>">Supprimer</a>
                                 </td>
                             </tr>
                         <?php

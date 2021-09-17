@@ -12,12 +12,12 @@
     <main class="container">
         <div class="row">
             <section class="col-12">
-                <h1>Détails du produit <?= $produit['produit'] ?></h1>
-                <p>ID : <?= $produit['id'] ?></p>
-                <p>Produit : <?= $produit['produit'] ?></p>
-                <p>Prix : <?= $produit['prix'] ?></p>
-                <p>Nombre : <?= $produit['nombre'] ?></p>
-                <p><a class="btn btn-primary" href="index.php">Retour</a> <a class="btn btn-success" href="index.php?action=updateProduct&AMP;id=<?= $produit['id'] ?>">Modifier</a></p>
+                <h1>Détails du produit <?= $product['produit'] ?></h1>
+                <p>ID : <?= $product['id'] ?></p>
+                <p>Produit : <?= $product['produit'] ?></p>
+                <p>Prix : <?= $product['prix'] ?></p>
+                <p>Nombre : <?= $product['nombre'] ?></p>
+                <p><a class="btn btn-primary" href="index.php">Retour</a> <a class="btn btn-success" href="index.php?action=updateProduct&AMP;id=<?= $product['id'] ?>">Modifier</a></p>
             </section>
         </div>
     </main>
