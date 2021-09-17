@@ -13,21 +13,21 @@ function createProduct()
 {
     $model = new Product;
     $create = $model->create();
-    require('./add.php');
+    require('./view/add.php');
 }
 
 function readProduct()
 {
     $model = new Product;
     $product = $model->read();
-    require('./details.php');
+    require('./view/details.php');
 }
 
 function updateProduct()
 {
     $model = new Product;
     $product = $model->update();
-    require('./edit.php');
+    require('./view/edit.php');
 }
 
 function deleteProduct()
